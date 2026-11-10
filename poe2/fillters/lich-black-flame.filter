@@ -1,0 +1,44 @@
+#===============================================================
+# POE2 Highlight Filter - Lich Black Flame (highlight only, hides nothing)
+# Same style as the previous filter: Unique = red, Normal = blue
+#
+# The filter matches on base type, so other uniques on the same base get highlighted too
+#
+# The Wicked Quill      -> Withered Wand
+# (rare focus)          -> Tasalian Focus   (white base to craft; no unique focus fits a fire build)
+# Candlemaker           -> Sombre Gloves
+# Demon Stitcher        -> Intricate Gloves --optional
+# Birth of Fury         -> Stone Greaves
+# Waveshaper            -> Tideseer Mantle
+# Atziri's Disdain      -> Gold Circlet
+# Ligurium Talisman     -> Lapis Amulet
+# Blackflame            -> Amethyst Ring
+# Cracklecreep          -> Ruby Ring
+# Shavronne's Satchel   -> Fine Belt
+#===============================================================
+
+#--- Unique ------------------------------------------------------
+Show
+    BaseType == "Withered Wand" "Sombre Gloves" "Intricate Gloves" "Stone Greaves" "Tideseer Mantle" "Gold Circlet" "Lapis Amulet" "Amethyst Ring" "Ruby Ring" "Fine Belt"
+    Rarity Unique
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 40 40 255
+    SetBackgroundColor 200 0 0 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+#--- Normal (white) bases for crafting ---------------------------
+# To show only high ilvl bases, remove the # before ItemLevel
+Show
+    BaseType == "Withered Wand" "Tasalian Focus" "Sombre Gloves" "Intricate Gloves" "Stone Greaves" "Tideseer Mantle" "Gold Circlet" "Lapis Amulet" "Amethyst Ring" "Ruby Ring" "Fine Belt"
+    Rarity Normal
+    # ItemLevel >= 81
+    SetFontSize 40
+    SetTextColor 255 255 255 255
+    SetBorderColor 80 200 255 255
+    SetBackgroundColor 0 70 110 255
+    PlayAlertSound 1 100
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Circle
