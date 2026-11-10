@@ -1,0 +1,10 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "python ~/.claude/statusline.py",
+    "refreshInterval": 1
+  },
+  "worktree": {
+    "bgIsolation": "none"
+  }
+}
