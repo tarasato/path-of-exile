@@ -1,0 +1,42 @@
+#===============================================================
+# POE2 Highlight Filter - Build ใหม่ (ไฮไลต์อย่างเดียว ไม่ซ่อนอะไร)
+# สไตล์เดียวกับไฟล์ก่อนหน้า: ยูนีค = แดง, Normal = ฟ้า
+#
+# ฟิลเตอร์จับที่ "ฐานไอเทม" ดังนั้นยูนีคอื่นบนฐานเดียวกันจะถูกไฮไลต์ด้วย
+#
+# The Wicked Quill      -> Withered Wand
+# Liminal Coil          -> Twisted Wand
+# Apep's Supremacy      -> Voodoo Focus
+# Windscream            -> Feathered Sandals
+# Bitterbloom           -> Feathered Robe
+# Cospri's Will         -> Assassin Garb
+# Atziri's Disdain      -> Gold Circlet
+# Ligurium Talisman     -> Lapis Amulet
+# Shavronne's Satchel   -> Fine Belt
+#===============================================================
+
+#--- ยูนีค -------------------------------------------------------
+Show
+    BaseType == "Withered Wand" "Twisted Wand" "Voodoo Focus" "Feathered Sandals" "Feathered Robe" "Assassin Garb" "Gold Circlet" "Lapis Amulet" "Fine Belt"
+    Rarity Unique
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 40 40 255
+    SetBackgroundColor 200 0 0 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+#--- Normal (ของขาว) สำหรับเอาไปคราฟต์เอง ------------------------
+# ถ้าต้องการเฉพาะ ilvl สูง เอา # หน้า ItemLevel ออก
+Show
+    BaseType == "Withered Wand" "Twisted Wand" "Voodoo Focus" "Feathered Sandals" "Feathered Robe" "Assassin Garb" "Gold Circlet" "Lapis Amulet" "Fine Belt"
+    Rarity Normal
+    # ItemLevel >= 81
+    SetFontSize 40
+    SetTextColor 255 255 255 255
+    SetBorderColor 80 200 255 255
+    SetBackgroundColor 0 70 110 255
+    PlayAlertSound 1 100
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Circle
