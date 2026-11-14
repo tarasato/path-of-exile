@@ -8,7 +8,7 @@
 #
 # Essentia Sanguis      -> Furtive Wraps
 # Powertread            -> Hunting Shoes
-# Redflare Conduit      -> Anchorite Garb
+# Cospri's Will         -> Assassin Garb
 # Atsak's Sight         -> Veiled Mask
 # Carnage Heart         -> Amber Amulet
 # Original Sin          -> Amethyst Ring
@@ -17,7 +17,7 @@
 #===============================================================
 
 Show
-    BaseType == "Furtive Wraps" "Hunting Shoes" "Anchorite Garb" "Veiled Mask" "Amber Amulet" "Amethyst Ring" "Fine Belt" "Golden Obi"
+    BaseType == "Furtive Wraps" "Hunting Shoes" "Assassin Garb" "Veiled Mask" "Amber Amulet" "Amethyst Ring" "Fine Belt" "Golden Obi"
     Rarity Unique
     SetFontSize 45
     SetTextColor 255 255 255 255
@@ -31,7 +31,7 @@ Show
 # เสียงเดิมแต่เบาลง (V = 100) สีขาว/ฟ้าให้ต่างจากยูนีค
 # ถ้าต้องการเฉพาะ ilvl สูง เอา # หน้า ItemLevel ออก
 Show
-    BaseType == "Furtive Wraps" "Hunting Shoes" "Anchorite Garb" "Veiled Mask" "Amber Amulet" "Amethyst Ring" "Fine Belt" "Golden Obi"
+    BaseType == "Furtive Wraps" "Hunting Shoes" "Assassin Garb" "Veiled Mask" "Amber Amulet" "Amethyst Ring" "Fine Belt" "Golden Obi"
     Rarity Normal
     # ItemLevel >= 81
     SetFontSize 40
